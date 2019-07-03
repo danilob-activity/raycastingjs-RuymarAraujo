@@ -38,6 +38,7 @@ function sizeWindow(w, h) {
 textarea.addEventListener("input", updateScene());
 
 function renderCanvas() {
+    updateScene();
     stop = true;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
