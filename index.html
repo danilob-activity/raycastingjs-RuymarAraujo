@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Phong Shading (Resolution)</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="mathfunctions.js"></script>
+    <link href="layout.css" rel="stylesheet">
+    <script type="text/javascript" src="objects.js"></script>
+</head>
+
+
+<body>
+    <article id="tudo">
+        <div class="left">
+            <div class="playable-buttons">
+                <input id="save" type="button" value="Save" />
+                <button onclick="renderCanvas();">Render</button>
+            </div>
+            <textarea id="code" class="playable-code">
+sizeWindow(500,500);
+s1 = new Shape();
+s1.setTranslate(0, 5, -15);
+s1.setScale(3, 3, 3); 
+addObject(s1);  
+            </textarea>
+        </div>
+
+        <div class="main">
+            <canvas id="render-canvas" style="border: 1px solid #000;" width="500" height="500">
+        </div>
+    </article>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!--a href="http://learningwebgl.com/blog/?p=1253">&lt;&lt; Back to Lesson 11</a><br /-->
+</body>
+
+</html>
